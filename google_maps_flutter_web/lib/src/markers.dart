@@ -144,7 +144,7 @@ class MarkersController extends GeometryController {
   ///
   /// See also [hideMarkerInfoWindow] and [isInfoWindowShown].
   void showMarkerInfoWindow(MarkerId markerId) {
-    // _hideAllMarkerInfoWindow();
+    //  _hideAllMarkerInfoWindow();
     final MarkerController? markerController = _markerIdToController[markerId];
     markerController?.showInfoWindow();
   }
@@ -202,12 +202,12 @@ class MarkersController extends GeometryController {
     ));
   }
 
-  void _hideAllMarkerInfoWindow() {
-    _markerIdToController.values
-        .where((MarkerController? controller) =>
-            controller?.infoWindowShown ?? false)
-        .forEach((MarkerController controller) {
-      // controller.hideInfoWindow();
-    });
-  }
+  // void _hideAllMarkerInfoWindow() {
+  //   _markerIdToController.values
+  //       .where((MarkerController? controller) =>
+  //           controller?.infoWindowShown ?? false)
+  //       .forEach((MarkerController controller) {
+  //     // controller.hideInfoWindow();
+  //   });
+  // }
 }
