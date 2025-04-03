@@ -207,7 +207,7 @@ class MarkersController extends GeometryController {
         .where((MarkerController? controller) =>
             controller?.infoWindowShown ?? false)
         .forEach((MarkerController controller) {
-      controller.hideInfoWindow();
+      // controller.hideInfoWindow();
     });
   }
 }
